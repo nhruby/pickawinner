@@ -1,0 +1,9 @@
+<h2>Contest Results</h2>
+
+<p>
+  Name: <%= @contest.name %>
+  <br/>
+  Contestants: <%= (@contest.contestants || []).join(', ') %>
+</p>
+
+<p>And the winner is... <%= @contest.winner %></p>

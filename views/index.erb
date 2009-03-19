@@ -1,0 +1,9 @@
+<h2>Recent Contests</h2>
+
+<ul>
+  <% @contests.each do |contest| %>
+    <li><a href="<%= contest_url(contest) %>"><%= contest.name %></a></li>
+  <% end %>
+</ul>
+
+<a href="/contests/new">New Contest</a>
